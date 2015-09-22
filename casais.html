@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>casais</title>
+</head>
+<body>
+<script type="text/javascript">
+	do{
+		var N = prompt();
+		document.write(N+"</br>");
+		var h = 0;
+		var m = 0;
+		var i =0;
+		for(i=0; i < N; i++){
+			var C = prompt(i+1);
+			document.write(C+"-");
+			if ((C % 2) == 0) {
+				m++;
+			} else{
+				h++;
+			}
+		};
+		if (N != 0) {
+			if (m == h) {
+				document.write("S</br></br>");
+			}else{
+				document.write("N</br></br>");
+			};
+		};
+	}while(N != 0);
+</script>
+</body>
+</html>
